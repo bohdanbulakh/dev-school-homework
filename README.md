@@ -58,8 +58,8 @@ This repository consists of directories with homeworks.\
 >[!NOTE]
 >Progress will be updated after completing next homework and merging all tasks solutions in **main** branch
 
- 1. + [ ] JavaScript basics - 1st homework
- 2. + [ ] JavaScript basics - 2nd homework
+ 1. + [X] JavaScript basics - 1st homework
+ 2. + [X] JavaScript basics - 2nd homework
  3. + [X] Asynchronous programming test
  4. + [ ] Object-oriented programming - 4th homework
 
