@@ -61,7 +61,7 @@ This repository consists of directories with homeworks.\
  1. + [X] JavaScript basics - 1st homework
  2. + [X] JavaScript basics - 2nd homework
  3. + [X] Asynchronous programming test
- 4. + [ ] Object-oriented programming - 4th homework
+ 4. + [X] Object-oriented programming - 4th homework
 
 ## Contacts
 + [Telegram](https://t.me/Bo_h_dan)
