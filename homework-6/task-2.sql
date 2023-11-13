@@ -1,0 +1,1 @@
+SELECT count(*) from payment WHERE amount > 3.00;
