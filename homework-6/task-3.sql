@@ -1,0 +1,1 @@
+SELECT count(DISTINCT district) from address;
