@@ -1,0 +1,1 @@
+SELECT * from film WHERE SUBSTR(title, 1, 1) = 'J';
