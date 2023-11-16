@@ -62,6 +62,8 @@ This repository consists of directories with homeworks.\
  2. + [X] JavaScript basics - 2nd homework
  3. + [X] Asynchronous programming test
  4. + [X] Object-oriented programming - 4th homework
+ 5. + [X] Github
+ 6. + [X] SQL & Prisma
 
 ## Contacts
 + [Telegram](https://t.me/Bo_h_dan)
