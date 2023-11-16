@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model bank {
+  id         Int         @id @default(autoincrement())
+  name       String
+  operations operation[]
+  balance    balance[]
+  user       user[]
+}
+
+model operation {
+  id       Int           @id @default(autoincrement())
+  type     operationType
+  sum      Int
+  user     user          @relation(fields: [userId], references: [id])
+  userId   Int
+  bank     bank          @relation(fields: [bankId], references: [id])
+  bankId   Int
+  dateTime DateTime      @db.Timestamp(3)
+}
+
+model balance {
+  id     Int  @id @default(autoincrement())
+  sum    Int
+  user   user @relation(fields: [userId], references: [id])
+  userId Int
+  bank   bank @relation(fields: [bankId], references: [id])
+  bankId Int
+}
+
+model user {
+  id          Int          @id @default(autoincrement())
+  UserProfile userAccount?
+  firstName   String
+  lastName    String
+  is18        Boolean
+  phoneNumber String
+  operations  operation[]
+  balances    balance[]
+  banks       bank[]
+}
+
+model userAccount {
+  id       Int    @id @default(autoincrement())
+  user     user   @relation(fields: [userId], references: [id])
+  userId   Int    @unique
+  login    String @unique
+  password String
+}
+
+enum operationType {
+  DEPOSIT
+  CREDIT
+}
