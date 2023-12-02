@@ -64,6 +64,8 @@ This repository consists of directories with homeworks.\
  4. + [X] Object-oriented programming - 4th homework
  5. + [X] Github
  6. + [X] SQL & Prisma
+ 7. + [X] Express app
+ 8. + [X] Nest app
 
 ## Contacts
 + [Telegram](https://t.me/Bo_h_dan)
